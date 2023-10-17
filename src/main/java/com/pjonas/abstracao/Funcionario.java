@@ -2,9 +2,9 @@ package com.pjonas.abstracao;
 
 public class Funcionario {
     
-    private String nome;
-    private Integer idade;
-    private Double salario;
+    protected String nome;
+    protected Integer idade;
+    protected Double salario;
 
     public Funcionario(String nome, Integer idade, Double salario) {
         this.nome = nome;
@@ -24,7 +24,7 @@ public class Funcionario {
         return salario;
     }
 
-    public static Double calcularDecimoTerceiro(Double salario) {
+    public Double calcularDecimoTerceiro(Double salario) {
         return salario + (salario * 0.10);
     }
 
@@ -35,10 +35,10 @@ public class Funcionario {
 
     public static void main(String[] args) {
         Funcionario funcionario = new Funcionario("Jonas", 33, 5400.00);
-        Double decimoTerceiro = calcularDecimoTerceiro(funcionario.getSalario());
+//        Double decimoTerceiro = calcularDecimoTerceiro(funcionario.getSalario());
 
         System.out.println("Funcionário: " + funcionario);
-        System.out.println("Décimo terceiro salário: R$" + decimoTerceiro);
+//        System.out.println("Décimo terceiro salário: R$" + decimoTerceiro);
     }
     
     
