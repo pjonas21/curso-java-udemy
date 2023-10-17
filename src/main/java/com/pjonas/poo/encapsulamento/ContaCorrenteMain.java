@@ -1,4 +1,4 @@
-package com.pjonas.encapsulamento;
+package com.pjonas.poo.encapsulamento;
 
 public class ContaCorrenteMain {
 

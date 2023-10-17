@@ -1,4 +1,4 @@
-package com.pjonas.abstracao;
+package com.pjonas.poo.abstracao;
 
 public class Funcionario {
     
